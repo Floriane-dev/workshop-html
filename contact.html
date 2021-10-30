@@ -4,27 +4,28 @@
         <title>Pizzeria</title>
     </head>
     <body>
+        <a href=.\index.html>Retour</a>
         <form action="\send" method="post">
             <fieldset>
                 <legend>Formulaire de contact</legend>
                 <div>
                     <label for"nom_personne">Nom</label>
-                    <input type="text" name="nom" id="nom_personne">
+                    <input type="text" name="nom" id="nom_personne" required>
                 </div>
             
             <div>
                 <label for"prenom_personne">Prénom</label>
-                <input type="text" name="prénom" id="prenom_personne">
+                <input type="text" name="prénom" id="prenom_personne" required>
             </div>
             
             <div>
                 <label for"email">E-MAIL</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
             
             <div>
                 <label for"tel">Téléphone</label>
-                <input type="tel" name="téléphone" id=tel>
+                <input type="tel" name="téléphone" id=tel required placeholder="votre numéro de téléphone">
             </div>
             
             <div>
@@ -36,7 +37,7 @@
             </div>
             <div>
                 <legend>Message</legend>
-                <textarea rows=5 cols=80></textarea>
+                <textarea rows=5 cols=80 placeholder="Veuillez saisir votre message"></textarea>
             </div>
             
         </fieldset>
