@@ -7,24 +7,26 @@
         <form action="\send" method="post">
             <fieldset>
                 <legend>Formulaire de contact</legend>
-            <input type="text" name="nom" id="nom_personne">
             <label for"nom_personne">Nom</label>
-
-            <input type="text" name="prénom" id="prenom_personne">
+            <input type="text" name="nom" id="nom_personne">
+            <br>
             <label for"prenom_personne">Préom</label>
-
-            <input type="email" name="email" id="email">
+            <input type="text" name="prénom" id="prenom_personne">
+            <br>
             <label for"email">E-MAIL</label>
-
-            <input type="tel" name="téléphone" id=tel>
+            <input type="email" name="email" id="email">
+            <br>
             <label for"tel">Téléphone</label>
-
-            <select id="canal de contact" multiple>
+            <input type="tel" name="téléphone" id=tel>
+            <br>
+            <label for"canal_de_contact">Choississez un canal de contact préféré</label>
+            <select id="canal_de_contact" multiple>
                 <option value="E-mail"></option>
                 <option value="Téléphone"></option>
             </select>
+            <br>
             <legend>Message</legend>
-        <textarea rows=5 cols=10> 
+        <textarea rows=5 cols=80></textarea>
         </fieldset>
         <button type="submit">Valider</button>
         </form>
